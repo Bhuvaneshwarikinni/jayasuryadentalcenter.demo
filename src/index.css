@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,46 +7,45 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 200 25% 15%;
+    --foreground: 200 20% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 200 25% 15%;
+    --card-foreground: 200 20% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 200 25% 15%;
+    --popover-foreground: 200 20% 15%;
 
-    --primary: 174 62% 40%;
+    --primary: 174 58% 42%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 174 40% 95%;
-    --secondary-foreground: 174 62% 30%;
+    --secondary: 174 30% 95%;
+    --secondary-foreground: 174 58% 30%;
 
-    --muted: 200 20% 96%;
-    --muted-foreground: 200 15% 45%;
+    --muted: 200 15% 96%;
+    --muted-foreground: 200 10% 45%;
 
-    --accent: 174 40% 92%;
-    --accent-foreground: 174 62% 25%;
+    --accent: 38 80% 55%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 200 20% 90%;
-    --input: 200 20% 90%;
-    --ring: 174 62% 40%;
+    --border: 200 15% 90%;
+    --input: 200 15% 90%;
+    --ring: 174 58% 42%;
 
     --radius: 0.75rem;
 
-    --hero-overlay: linear-gradient(135deg, hsla(174, 62%, 25%, 0.85), hsla(200, 60%, 20%, 0.75));
-    --section-alt: 174 40% 97%;
-
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 174 62% 40%;
+    --sidebar-primary: 174 58% 42%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 174 40% 95%;
-    --sidebar-accent-foreground: 174 62% 25%;
-    --sidebar-border: 200 20% 90%;
-    --sidebar-ring: 174 62% 40%;
+    --sidebar-accent: 174 30% 95%;
+    --sidebar-accent-foreground: 174 58% 30%;
+    --sidebar-border: 200 15% 90%;
+    --sidebar-ring: 174 58% 42%;
+
+    --section-alt: 174 30% 97%;
   }
 }
 
@@ -52,55 +53,21 @@
   * {
     @apply border-border;
   }
-
   body {
-    @apply bg-background text-foreground antialiased;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    @apply bg-background text-foreground font-sans antialiased;
   }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    font-weight: 700;
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
   }
 }
 
 @layer utilities {
-  .hero-gradient {
-    background: var(--hero-overlay);
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24;
   }
-
-  .section-alt {
-    background: hsl(var(--section-alt));
+  .container-narrow {
+    @apply max-w-6xl mx-auto;
   }
-
-  .text-gradient {
-    @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(174 62% 40%), hsl(200 60% 35%));
-  }
-
-  .animate-fade-up {
-    animation: fadeUp 0.6s ease-out forwards;
-  }
-
-  .animate-fade-in {
-    animation: fadeIn 0.5s ease-out forwards;
-  }
-}
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }
 
 html {
