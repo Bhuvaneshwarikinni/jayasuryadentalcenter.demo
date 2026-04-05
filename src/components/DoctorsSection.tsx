@@ -39,7 +39,7 @@ const DoctorsSection = () => (
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {doctors.map((d) => (
           <div key={d.name} className="bg-card rounded-2xl overflow-hidden border border-border hover:shadow-lg transition-shadow">
-            <img src={d.image} alt={d.name} className="w-full h-72 object-cover" loading="lazy" width={512} height={640} />
+            <img src={d.image} alt={d.name} className="w-full h-72 object-cover object-top" loading="lazy" width={512} height={640} />
             <div className="p-6 text-center">
               <h3 className="font-display text-xl font-bold text-foreground">{d.name}</h3>
               <p className="text-primary font-medium text-sm mt-1">{d.role}</p>
