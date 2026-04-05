@@ -1,6 +1,6 @@
 import doctorJayanth from "@/assets/doctor-jayanth.png";
 import doctorPurnima from "@/assets/doctor-purnima.png";
-import doctorSowmya from "@/assets/doctor-sowmya.jpg";
+import doctorSowmya from "@/assets/doctor-sowmya.png";
 
 const doctors = [
   {
