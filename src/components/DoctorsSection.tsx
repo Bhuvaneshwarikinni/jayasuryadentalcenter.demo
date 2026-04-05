@@ -1,4 +1,4 @@
-import doctorJayanth from "@/assets/doctor-jayanth.jpg";
+import doctorJayanth from "@/assets/doctor-jayanth.png";
 import doctorPurnima from "@/assets/doctor-purnima.jpg";
 import doctorSowmya from "@/assets/doctor-sowmya.jpg";
 
