@@ -7,6 +7,7 @@ import BeforeAfterGallery from "@/components/BeforeAfterGallery";
 import ReviewsSection from "@/components/ReviewsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Index = () => (
   <>
@@ -19,6 +20,7 @@ const Index = () => (
     <ReviewsSection />
     <ContactSection />
     <Footer />
+    <WhatsAppButton />
   </>
 );
 
