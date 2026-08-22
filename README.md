@@ -96,6 +96,5 @@ npm run dev
 ## 👤 Author
 
 * **Bhuvaneshwarikinni**
-Would you like a professional cover page image generated for this **Jayasurya Dental Center** project as well, matching the style of your previous ones?
 
 
